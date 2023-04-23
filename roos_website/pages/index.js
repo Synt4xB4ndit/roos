@@ -1,11 +1,10 @@
+
 import { Footer, Navbar } from '../components';
-import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, } from '../sections';
+import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
 
 
-
-
-const Home = () => (
-  <div className="bg-orange overflow-hidden font-sans">
+const Page = () => (
+  <div className="bg-white overflow-hidden font-abc">
     <Navbar />
     <Hero />
     <div className="relative">
@@ -13,19 +12,22 @@ const Home = () => (
       <div className="gradient-03 z-0" />
       <Explore />
     </div>
+
     <div className="relative">
       <GetStarted />
       <div className="gradient-04 z-0" />
       <WhatsNew />
-    </div>
-  
-    <div className="relative">
-    <Insights/>
-      <div className="gradient-04 z-0" />
+      </div>
+      
+    
+     <div className="relative">
+     <Insights />
+    <div className="gradient-04 z-0" />
       <Feedback />
     </div>
+
     <Footer />
   </div>
 );
 
-export default Home;
+export default Page;
